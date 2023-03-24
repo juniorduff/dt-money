@@ -1,0 +1,10 @@
+
+{
+  "extends": ["@rocketseat/eslint-config/react","prettier"],
+  "rules": {
+    "prettier/prettier": ["off",  {"endOfLine": "auto"}],
+   "no-unused-vars": "off"
+  },
+    "plugins": ["prettier"]
+
+}
