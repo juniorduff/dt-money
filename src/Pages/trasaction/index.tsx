@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import { Header } from '../../components/Header';
 import { Summary } from '../../components/Summary';
 import { PriceHighlight, TransactionContainer, TransactionTable } from './styles';
-import { SearchForm } from '../../components/SerachForm';
+import { SearchForm } from '../../components/SearchForm';
 import { TransactionContext } from '../../context/TransactionContext';
 import { currencyFormatter, dateFormatter } from '../../utils/formatter';
 

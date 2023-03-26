@@ -1,20 +1,44 @@
-
 {
-"transactions": [
-  {
-    "id": "1",
-    "type": "income",
-    "price": 1020,
-    "category": "venda",
-    "description": "venda de um produto",
-    "createdAt": "2023-04-25T03:00:00.000Z"
-  },  {
-    "id": "2",
-    "type": "outcome",
-    "price": 1000,
-    "category": "Alimentação",
-    "description": "Burguer",
-    "createdAt": "2023-04-25T03:00:00.000Z"
-  }
-]
+  "transactions": [
+    {
+      "id": "1",
+      "type": "income",
+      "price": 1020,
+      "category": "venda",
+      "description": "venda de um produto",
+      "createdAt": "2023-04-25T03:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "type": "outcome",
+      "price": 1000,
+      "category": "Alimentação",
+      "description": "Burguer",
+      "createdAt": "2023-04-25T03:00:00.000Z"
+    },
+    {
+      "description": "teste",
+      "price": 12312,
+      "category": "teste",
+      "type": "income",
+      "createdAt": "2023-03-26T03:59:19.118Z",
+      "id": "OQrvk6x"
+    },
+    {
+      "description": "teste",
+      "price": 21,
+      "category": "teste",
+      "type": "outcome",
+      "createdAt": "2023-03-26T03:59:50.086Z",
+      "id": "mkKHZ_O"
+    },
+    {
+      "description": "almoço",
+      "price": 54,
+      "category": "lunar",
+      "type": "income",
+      "createdAt": "2023-03-26T04:10:18.443Z",
+      "id": "kd4jAhI"
+    }
+  ]
 }
