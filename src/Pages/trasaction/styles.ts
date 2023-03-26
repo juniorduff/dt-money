@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 
 export const TransactionContainer = styled.header`
-  background: ${({ theme }) => theme['gray-900']};
-  padding: 2.5rem 0 7.5rem;
+  margin: 4rem auto 0;
+  padding: 0 1.5rem;
+  max-width: 1120px;
 `;
 export const TransactionTable = styled.table`
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 0.5rem;
+  margin-top: 1.5rem;
 
   td {
     padding: 1rem 2rem;
-    background: ${({ theme }) => theme['gray-800']};
-
+    background: ${({ theme }) => theme['gray-700']};
     &:first-child {
       border-top-left-radius: 6px;
       border-bottom-left-radius: 6px;

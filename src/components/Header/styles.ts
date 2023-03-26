@@ -13,19 +13,20 @@ export const HeaderContent = styled.div`
   justify-content: space-between;
 `;
 export const NewTransactionButton = styled.button`
-    font-size: 1rem;
-    background: ${({ theme }) => theme['green-500']};
-    border: 0;
-    padding: 0 1.25rem;
+  font-size: 1rem;
+  background: ${({ theme }) => theme['green-500']};
+  border: 0;
+  padding: 0 1.25rem;
   display: flex;
   font-weight: bold;
   justify-items: center;
   height: 50px;
-  color:  ${({ theme }) => theme.white};
- align-items: center;
+  color: ${({ theme }) => theme.white};
+  align-items: center;
   border-radius: 6px;
   cursor: pointer;
   &:hover {
-    background:  ${({ theme }) => theme['green-700']};
+    background: ${({ theme }) => theme['green-700']};
     transition: 0.2s;
+  }
 `;

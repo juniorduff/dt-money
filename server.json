@@ -1,0 +1,20 @@
+
+{
+"transactions": [
+  {
+    "id": "1",
+    "type": "income",
+    "price": 1020,
+    "category": "venda",
+    "description": "venda de um produto",
+    "createdAt": "2023-04-25T03:00:00.000Z"
+  },  {
+    "id": "2",
+    "type": "outcome",
+    "price": 1000,
+    "category": "Alimentação",
+    "description": "Burguer",
+    "createdAt": "2023-04-25T03:00:00.000Z"
+  }
+]
+}

@@ -12,7 +12,6 @@ export const SummaryContainer = styled.header`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-
   margin-top: -5rem;
 `;
 export const SummaryCard = styled.div<SummaryCardProps>`
