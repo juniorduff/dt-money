@@ -1,12 +1,12 @@
 // @flow
 import * as React from 'react';
-import { useContext } from 'react';
 import { Header } from '../../components/Header';
 import { Summary } from '../../components/Summary';
 import { PriceHighlight, TransactionContainer, TransactionTable } from './styles';
 import { SearchForm } from '../../components/SearchForm';
 import { TransactionContext } from '../../context/TransactionContext';
 import { currencyFormatter, dateFormatter } from '../../utils/formatter';
+import { useContextSelector } from 'use-context-selector';
 
 type Props = {};
 export interface ITransaction {
@@ -20,7 +20,7 @@ export interface ITransaction {
 }
 
 export function Transaction(props: Props) {
-  const { transactions } = useContext(TransactionContext);
+  const transactions = useContextSelector(TransactionContext, (context) => context.transactions);
   return (
     <div>
       <Header />

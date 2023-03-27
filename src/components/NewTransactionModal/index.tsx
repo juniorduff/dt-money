@@ -1,17 +1,20 @@
 // @flow
 import * as Dailog from '@radix-ui/react-dialog';
 import * as React from 'react';
-import { useContext } from 'react';
 import { CloseButton, Content, Overlay, TransactionButton, TransactionType } from './styles';
 import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react';
 import * as z from 'zod';
 import { Controller, useForm } from 'react-hook-form';
 import { TransactionContext } from '../../context/TransactionContext';
+import { useContextSelector } from 'use-context-selector';
 
 type Props = {};
 
 export function NewTransactionModal(props: Props) {
-  const { createTransaction } = useContext(TransactionContext);
+  const createTransaction = useContextSelector(
+    TransactionContext,
+    (context) => context.createTransaction
+  );
   const NewTransactionModalSchema = z.object({
     description: z.string().min(3).max(100),
     price: z.number().min(0),

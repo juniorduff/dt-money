@@ -1,11 +1,11 @@
 // @flow
 import * as React from 'react';
-import { useContext } from 'react';
 import { MagnifyingGlass } from 'phosphor-react';
 import { SearchFormContainer } from './styles';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { TransactionContext } from '../../context/TransactionContext';
+import { useContextSelector } from 'use-context-selector';
 
 type Props = {};
 
@@ -14,7 +14,10 @@ const searchFormSchema = z.object({
 });
 type SearchFormInputs = z.infer<typeof searchFormSchema>;
 export function SearchForm(props: Props) {
-  const { fetchTransactions } = useContext(TransactionContext);
+  const fetchTransactions = useContextSelector(
+    TransactionContext,
+    (context) => context.fetchTransactions
+  );
 
   const {
     register,
